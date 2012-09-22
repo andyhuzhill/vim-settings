@@ -1,0 +1,30 @@
+$
+$ =============================================================
+$ ========== USER MACROS ======================================
+$ =============================================================
+$
+|AUTHOR|    = Andy Scout 
+|AUTHORREF| = 
+|EMAIL|     = andyhuzhill@gmail.com
+|COMPANY|   =  http://andylinux.sinaapp.com
+|COPYRIGHT| = Copyright (c) |2012|, |Andy|
+|STYLE|     = default
+$
+$ =============================================================
+$ ========== FILE INCLUDES ====================================
+$ =============================================================
+$
+|includefile| = c.comments.template
+|includefile| = c.cpp.template
+|includefile| = c.idioms.template
+|includefile| = c.preprocessor.template
+|includefile| = c.statements.template
+$
+== IF |STYLE| IS CPP ==
+|includefile| = cpp.comments.template
+|includefile| = cpp.cpp.template
+|includefile| = cpp.idioms.template
+|includefile| = cpp.preprocessor.template
+|includefile| = cpp.statements.template
+== ENDIF ==
+$
