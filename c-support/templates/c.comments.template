@@ -43,9 +43,9 @@ $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  *        Version:  1.0
  *        Created:  |DATE| |TIME|
  *       Revision:  none
- *       Compiler:  gcc
+ *       Compiler:  
  *
- *         Author:  |AUTHOR| (|AUTHORREF|), |EMAIL|
+ *         Author:  |AUTHOR| , |EMAIL|
  *   Organization:  |ORGANIZATION|
  *
  * =========================================================================
@@ -64,7 +64,7 @@ $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  *       Revision:  none
  *       Compiler:  gcc
  *
- *         Author:  |AUTHOR| (|AUTHORREF|), |EMAIL|
+ *         Author:  |AUTHOR| , |EMAIL|
  *   Organization:  |ORGANIZATION|
  *
  * =========================================================================

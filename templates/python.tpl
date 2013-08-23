@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 # *-* encoding: utf-8 *-*
 #
-###############################################
-#      author:    Andy Scout
-#    homepage:    http://andyhuzhill.github.com
+# =============================================
+#      Author   : Andy Scout
+#    Homepage   : http://andyhuzhill.github.io
+#    E-mail     : andyhuzhill@gmail.com
 #
-# description:
+#  Description  :
+#  Revision     :
 #
-###############################################
+# =============================================
 

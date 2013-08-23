@@ -87,3 +87,8 @@ let g:vimwiki_rxMathStart = '\$\$'
 let g:vimwiki_rxMathEnd = '\$\$'
 
 let g:vimwiki_rxComment = '^\s*%%.*$'
+
+syn region markdownTexInline start="\$" end="\$" keepend oneline
+syn region markdownTexBlock start="\\begin{.*}" end="\\end{.*}" keepend 
+hi def link markdownTexBlock              Tag
+hi def link markdownTexInline             Tag 
