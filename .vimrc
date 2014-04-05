@@ -8,28 +8,35 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'vim-pandoc/vim-pandoc'
 
+Bundle 'scrooloose/nerdtree'
+Bundle 'pix/vim-taglist'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'vim-pandoc/vim-pandoc'
+Bundle 'Yggdroot/indentLine'
+Bundle 'tpope/vim-surround'
 Bundle 'a.vim'
 Bundle 'taglist.vim'
-"Bundle 'css_color.vim'
+Bundle 'python.vim'
 Bundle 'python-mode'
 Bundle 'vim_markdown'
+Bundle 'vim-scripts/javaDoc.vim'
 
 filetype plugin indent on
-syntax on   "打开语法高亮
-set nocompatible  " 不要vim模仿vi模式
-colo evening 	  " 使用evening主题
-set autoindent    " 智能缩进
-set smartindent	  " 智能对齐方式
+
+syntax on           "打开语法高亮
+set nocompatible    " 不要vim模仿vi模式
+colo evening 	    " 使用evening主题
+set autoindent      " 智能缩进
+set smartindent	    " 智能对齐方式
 set expandtab
-set tabstop=4     " 让一个Tab等于4个空格
-set hlsearch      " 高亮显示结果
-set incsearch     " 让vim实时匹配搜索
+set tabstop=4       " 让一个Tab等于4个空格
+set hlsearch        " 高亮显示结果
+set incsearch       " 让vim实时匹配搜索
 set shiftwidth=4
-set textwidth=100 " 设置一行100列
-set cc=+1         " 设置第100列显示对齐线
-set nu!           " 显示行号
+set textwidth=100   " 设置一行100列
+set cc=+1           " 设置第100列显示对齐线
+set nu!             " 显示行号
 
 let g:indent_guides_guide_size=1
 
@@ -37,6 +44,11 @@ set ruler
 set tags+=/usr/include/tags
 set tags=./tags
 set autochdir
+
+
+"设置PowerLine
+set laststatus=2
+let g:Powerline_symbols = 'unicode'
 
 "进行Tlist的设置
 let Tlist_Ctags_Cmd="ctags"         "因为ctags直接在环境变量里可直接执行
