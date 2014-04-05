@@ -17,11 +17,9 @@ Bundle 'python-mode'
 Bundle 'vim_markdown'
 
 filetype plugin indent on
-
+syntax on   "打开语法高亮
 set nocompatible  " 不要vim模仿vi模式
-
 colo evening 	  " 使用evening主题
-
 set autoindent    " 智能缩进
 set smartindent	  " 智能对齐方式
 set expandtab
