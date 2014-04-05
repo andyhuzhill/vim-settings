@@ -1,21 +1,21 @@
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == idioms.function ==
 void
-|?FUNCTION_NAME| ( <+argument list+> )
+|?FUNCTION_NAME|( <+argument list+> )
 {
 <SPLIT>	return <+return value+>;
 }		// -----  end of function |FUNCTION_NAME|  -----
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == idioms.function-static ==
 static void
-|?FUNCTION_NAME| ( <+argument list+> )
+|?FUNCTION_NAME|( <+argument list+> )
 {
 <SPLIT>	return <+return value+>;
 }		// -----  end of static function |FUNCTION_NAME|  -----
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == idioms.main ==
 int
-main ( int argc, char *argv[] )
+main( int argc, char *argv[] )
 {<CURSOR>
 <SPLIT>	return EXIT_SUCCESS;
 }				// ----------  end of function main  ----------
@@ -61,8 +61,7 @@ free (|POINTER|);
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == idioms.realloc ==
 |?POINTER|	= realloc ( |POINTER|, sizeof(<CURSOR><+TYPE+>) );
-if ( |POINTER|==NULL )
-{
+if ( |POINTER|==NULL ){
 	fprintf ( stderr, "\ndynamic memory reallocation failed\n" );
 	exit (EXIT_FAILURE);
 }

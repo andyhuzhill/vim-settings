@@ -7,7 +7,7 @@ $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  * =========================================================================
  */
 void
-|FUNCTION_NAME| ()
+|FUNCTION_NAME|()
 {
 <SPLIT>	return ;
 }		/* -----  end of function |FUNCTION_NAME|  ----- */
@@ -20,7 +20,7 @@ $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  * =========================================================================
  */
 static void
-|FUNCTION_NAME| ()
+|FUNCTION_NAME|()
 {
 <SPLIT>	return ;
 }		/* -----  end of static function |FUNCTION_NAME|  ----- */
@@ -41,16 +41,14 @@ main(int argc, char *argv[])
 }				/* ----------  end of function main  ---------- */
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == idioms.enum ==
-enum |?ENUM_NAME| 
-{
+enum |?ENUM_NAME| {
 <SPLIT>
 };				/* ----------  end of enum |ENUM_NAME|  ---------- */
 
 typedef enum |ENUM_NAME| |ENUM_NAME:c|;
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == idioms.struct ==
-struct |?STRUCT_NAME| 
-{
+struct |?STRUCT_NAME| {
 <SPLIT><CURSOR>
 <SPLIT>
 };				/* ----------  end of struct |STRUCT_NAME|  ---------- */
@@ -58,8 +56,7 @@ struct |?STRUCT_NAME|
 typedef struct |STRUCT_NAME| |STRUCT_NAME:c|;
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == idioms.union ==
-union |?UNION_NAME| 
-{
+union |?UNION_NAME| {
 <SPLIT><CURSOR>
 <SPLIT>
 };			/* ----------  end of union |UNION_NAME|  ---------- */
@@ -73,8 +70,7 @@ scanf ( "<CURSOR>", & );
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == idioms.calloc ==
 |?POINTER|	= calloc ( (size_t)(<CURSOR><+COUNT+>), sizeof(<+TYPE+>) );
-if ( |POINTER|==NULL ) 
-{
+if ( |POINTER|==NULL ) {
 	fprintf ( stderr, "\ndynamic memory allocation failed\n" );
 	exit (EXIT_FAILURE);
 }
@@ -85,8 +81,7 @@ free (|POINTER|);
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == idioms.malloc ==
 |?POINTER|	= malloc ( sizeof(<CURSOR><+TYPE+>) );
-if ( |POINTER|==NULL ) 
-{
+if ( |POINTER|==NULL ) {
 	fprintf ( stderr, "\ndynamic memory allocation failed\n" );
 	exit (EXIT_FAILURE);
 }
@@ -97,8 +92,7 @@ free (|POINTER|);
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == idioms.realloc ==
 |?POINTER|	= realloc ( |POINTER|, sizeof(<CURSOR><+TYPE+>) );
-if ( |POINTER|==NULL ) 
-{
+if ( |POINTER|==NULL ) {
 	fprintf ( stderr, "\ndynamic memory reallocation failed\n" );
 	exit (EXIT_FAILURE);
 }

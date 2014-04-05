@@ -1,10 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/andy/workspace_v5_4/lcd'
-let g:netrw_dirhist_2='/home/andy/Documents/free RTOS Source/include'
-let g:netrw_dirhist_3='/home/andy/Downloads/FreeRTOSV7.5.2/FreeRTOS/Source/include'
-let g:netrw_dirhist_4='/home/andy/.gnome'
-let g:netrw_dirhist_5='/home/andy/Myprogram/ANSIC'
-let g:netrw_dirhist_6='/home/andy/Myprogram/python/qqweibo'
-let g:netrw_dirhist_7='/home/andy/Myprogram/python'
-let g:netrw_dirhist_8='/home/andy/Myprogram'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/usr/msp430/include/sys'
+let g:netrw_dirhist_2='/home/andy/Read/FreeRTOSV7.2.0'
+let g:netrw_dirhist_3='/etc/apt'
+let g:netrw_dirhist_4='/home/andy/qt-everywhere-opensource-src-5.1.1/qtbase/mkspecs'
+let g:netrw_dirhist_5='/etc/wpa_supplicant'
