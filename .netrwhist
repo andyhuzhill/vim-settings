@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/usr/msp430/include/sys'
-let g:netrw_dirhist_2='/home/andy/Read/FreeRTOSV7.2.0'
-let g:netrw_dirhist_3='/etc/apt'
-let g:netrw_dirhist_4='/home/andy/qt-everywhere-opensource-src-5.1.1/qtbase/mkspecs'
-let g:netrw_dirhist_5='/etc/wpa_supplicant'
