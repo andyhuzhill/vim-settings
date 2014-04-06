@@ -16,11 +16,12 @@ Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'Yggdroot/indentLine'
 Bundle 'tpope/vim-surround'
 Bundle 'a.vim'
+Bundle 'c.vim'
 Bundle 'taglist.vim'
 Bundle 'python.vim'
-Bundle 'python-mode'
-Bundle 'vim_markdown'
 Bundle 'vim-scripts/javaDoc.vim'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'vim-scripts/nerdcommenter'
 
 filetype plugin indent on
 
