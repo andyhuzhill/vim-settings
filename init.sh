@@ -18,6 +18,8 @@ if [ -f "$HOME/.vimrc" ]; then
     mv ~/.vimrc ~/.vimrc.`date +%Y%m%d`
 fi
 
+git clone $(cat vundle.address) Bundle/vundle
+
 ln -s ~/.vim/.vimrc ~/.vimrc
 
 git submodule init
