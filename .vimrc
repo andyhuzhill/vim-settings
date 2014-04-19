@@ -80,6 +80,9 @@ set ai!
 map <F5> <Esc>:%! astyle -fUz2 --style=linux --indent=spaces=4<CR>
 map <F6> gg=G
 
+"
+map <F4> <Esc>:Tlist <CR>
+
 "头文件与源文件切换
 map <F12> <Esc>:A<CR>
 
