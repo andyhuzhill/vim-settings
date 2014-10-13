@@ -46,7 +46,6 @@ set tags+=/usr/include/tags
 set tags=./tags
 set autochdir
 
-
 "设置PowerLine
 set laststatus=2
 let g:Powerline_symbols = 'unicode'
@@ -80,7 +79,7 @@ set ai!
 map <F5> <Esc>:%! astyle -A3 -s4 -jvcpH  -xL -k3 -W3  <CR>
 map <F6> gg=G
 
-"
+"快捷键显示tagList
 map <F4> <Esc>:Tlist <CR>
 
 "头文件与源文件切换
