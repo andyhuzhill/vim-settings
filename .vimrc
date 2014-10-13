@@ -22,6 +22,7 @@ Bundle 'python.vim'
 Bundle 'vim-scripts/javaDoc.vim'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'vim-scripts/nerdcommenter'
+Bundle 'code_complete'
 
 filetype plugin indent on
 
