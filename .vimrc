@@ -35,8 +35,8 @@ set tabstop=4       " 让一个Tab等于4个空格
 set hlsearch        " 高亮显示结果
 set incsearch       " 让vim实时匹配搜索
 set shiftwidth=4
-set textwidth=100   " 设置一行100列
-set cc=+1           " 设置第100列显示对齐线
+set textwidth=120   " 设置一行120列
+set cc=+1           " 设置第120列显示对齐线
 set nu!             " 显示行号
 
 let g:indent_guides_guide_size=1
@@ -77,7 +77,7 @@ set completeopt=menuone,longest,menu
 set ai!
 
 "使用astyle 格式化C代码
-map <F5> <Esc>:%! astyle -fUz2 --style=linux --indent=spaces=4<CR>
+map <F5> <Esc>:%! astyle -A3 -s4 -jvcpH  -xL -k3 -W3  <CR>
 map <F6> gg=G
 
 "
