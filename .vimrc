@@ -40,9 +40,6 @@ set textwidth=120   " 设置一行120列
 set cc=+1           " 设置第120列显示对齐线
 set nu!             " 显示行号
 
-if ! has("gui_running")
-    set t_Co=256
-endif
 if &diff
     colors peaksea
 endif
