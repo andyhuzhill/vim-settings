@@ -21,8 +21,8 @@ Bundle 'taglist.vim'
 Bundle 'python.vim'
 Bundle 'vim-scripts/javaDoc.vim'
 Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'vim-scripts/nerdcommenter'
 Bundle 'code_complete'
+Bundle 'vimwiki'
 
 filetype plugin indent on
 
@@ -40,11 +40,22 @@ set textwidth=120   " 设置一行120列
 set cc=+1           " 设置第120列显示对齐线
 set nu!             " 显示行号
 
+if ! has("gui_running")
+    set t_Co=256
+endif
+if &diff
+    colors peaksea
+endif
+
 let g:indent_guides_guide_size=1
+
+set sessionoptions+=unix,slash
 
 set ruler
 set tags+=/usr/include/tags
-set tags=./tags
+set tags+=/usr/include/qt4/tags
+set tags+=./tags
+set tags+=/usr/src/linux-headers-3.13.0-39/tags
 set autochdir
 
 "设置PowerLine
