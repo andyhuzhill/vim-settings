@@ -107,7 +107,9 @@ set autoread
 set autowriteall
 
 " 新建python文件自动插入文件头
-autocmd BufNewFile *.py 0 r ~/.vim/templates/python.tpl
+autocmd BufNewFile *.py   0 r ~/.vim/templates/python.tpl
 autocmd BufNewFile *.vhdl 0 r ~/.vim/templates/vhdl.tpl
 autocmd BufNewFile *.vhd  0 r ~/.vim/templates/vhdl.tpl
 autocmd BufNewFile *.sh   0 r ~/.vim/templates/bash.tpl
+autocmd BufNewFile,BufRead *.qml  set filetype=qml
+autocmd BufNewFile * normal G
