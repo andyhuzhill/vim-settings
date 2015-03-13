@@ -2,7 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # =============================================
-#      Author   : Hu Zhenyu 
+#      Author   : Hu Zhenyu
 #    E-mail     : zhenyu.hu@ec-jet.com
 #
 #  Description  :

@@ -113,3 +113,4 @@ autocmd BufNewFile *.vhd  0 r ~/.vim/templates/vhdl.tpl
 autocmd BufNewFile *.sh   0 r ~/.vim/templates/bash.tpl
 autocmd BufNewFile,BufRead *.qml  set filetype=qml
 autocmd BufNewFile * normal G
+autocmd Filetype gitcommit setlocal spell textwidth=72
