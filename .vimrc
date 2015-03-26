@@ -23,6 +23,7 @@ Bundle 'vim-scripts/javaDoc.vim'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'code_complete'
 Bundle 'vimwiki'
+Bundle 'Glench/Vim-Jinja2-Syntax'
 
 filetype plugin indent on
 
