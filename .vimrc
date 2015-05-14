@@ -24,6 +24,7 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'code_complete'
 Bundle 'vimwiki'
 Bundle 'Glench/Vim-Jinja2-Syntax'
+Bundle 'mattn/emmet-vim'
 
 filetype plugin indent on
 
@@ -112,6 +113,7 @@ autocmd BufNewFile *.py   0 r ~/.vim/templates/python.tpl
 autocmd BufNewFile *.vhdl 0 r ~/.vim/templates/vhdl.tpl
 autocmd BufNewFile *.vhd  0 r ~/.vim/templates/vhdl.tpl
 autocmd BufNewFile *.sh   0 r ~/.vim/templates/bash.tpl
+autocmd BufNewFile,BufRead *.pp  set filetype=pascal
 autocmd BufNewFile,BufRead *.qml  set filetype=qml
 autocmd BufNewFile * normal G
 autocmd Filetype gitcommit setlocal spell textwidth=72
