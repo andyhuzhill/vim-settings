@@ -25,6 +25,7 @@ Bundle 'code_complete'
 Bundle 'vimwiki'
 Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'mattn/emmet-vim'
+Bundle 'iamcco/markdown-preview.vim'
 
 filetype plugin indent on
 
