@@ -20,12 +20,13 @@ Bundle 'c.vim'
 Bundle 'taglist.vim'
 Bundle 'python.vim'
 Bundle 'vim-scripts/javaDoc.vim'
-Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'code_complete'
+Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'vimwiki'
 Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'mattn/emmet-vim'
 Bundle 'iamcco/markdown-preview.vim'
+Bundle 'Rip-Rip/clang_complete'
 
 filetype plugin indent on
 
@@ -49,13 +50,15 @@ endif
 
 let g:indent_guides_guide_size=1
 
+let g:clang_use_library=1
+let g:clang_library_path="/usr/lib/llvm-3.6/lib"
+
 set sessionoptions+=unix,slash
 
 set ruler
 set tags+=/usr/include/tags
 set tags+=/usr/include/qt4/tags
 set tags+=./tags
-set tags+=/usr/src/linux-headers-3.13.0-39/tags
 set autochdir
 
 "设置PowerLine
@@ -74,18 +77,18 @@ let Tlist_Exit_OnlyWindow=1         "当只有tag窗口时退出vim
 let Tlist_Auto_Open=0               "每次使用vim，是否自动打开Tlist 
 
 " 设置自动补全
-let OmniCpp_GlobalScopeSearch = 1   " 0 or 1 
-let OmniCpp_NamespaceSearch = 1     " 0 ,  1 or 2 
-let OmniCpp_DisplayMode = 1 
-let OmniCpp_ShowScopeInAbbr = 0 
-let OmniCpp_ShowPrototypeInAbbr = 1 "显示函数参数列表
-let OmniCpp_ShowAccess = 1 
-let OmniCpp_MayCompleteDot = 1      "输入. 后补全
-let OmniCpp_MayCompleteArrow = 1    "输入->后补全
-let OmniCpp_MayCompleteScope = 1    "输入::后补全
+"let OmniCpp_GlobalScopeSearch = 1   " 0 or 1 
+"let OmniCpp_NamespaceSearch = 1     " 0 ,  1 or 2 
+"let OmniCpp_DisplayMode = 1 
+"let OmniCpp_ShowScopeInAbbr = 0 
+"let OmniCpp_ShowPrototypeInAbbr = 1 "显示函数参数列表
+"let OmniCpp_ShowAccess = 1 
+"let OmniCpp_MayCompleteDot = 1      "输入. 后补全
+"let OmniCpp_MayCompleteArrow = 1    "输入->后补全
+"let OmniCpp_MayCompleteScope = 1    "输入::后补全
 
-set completeopt=menuone,longest,menu
-set ai!
+"set completeopt=menuone,longest,menu
+"set ai!
 
 "使用astyle 格式化C代码
 map <F5> <Esc>:%! astyle -A3 -s4 -jvcpH  -xL -k3 -W3  <CR>
@@ -116,5 +119,6 @@ autocmd BufNewFile *.vhd  0 r ~/.vim/templates/vhdl.tpl
 autocmd BufNewFile *.sh   0 r ~/.vim/templates/bash.tpl
 autocmd BufNewFile,BufRead *.pp  set filetype=pascal
 autocmd BufNewFile,BufRead *.qml  set filetype=qml
+autocmd BufNewFile,BufRead *.go  set filetype=go
 autocmd BufNewFile * normal G
 autocmd Filetype gitcommit setlocal spell textwidth=72
