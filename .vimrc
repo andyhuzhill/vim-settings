@@ -11,7 +11,9 @@ Bundle 'gmarik/vundle'
 
 Bundle 'scrooloose/nerdtree'
 Bundle 'pix/vim-taglist'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
+Bundle 'tpope/vim-fugitive'
 Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'Yggdroot/indentLine'
 Bundle 'tpope/vim-surround'
@@ -27,6 +29,7 @@ Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'mattn/emmet-vim'
 Bundle 'iamcco/markdown-preview.vim'
 Bundle 'Rip-Rip/clang_complete'
+Bundle 'udalov/kotlin-vim'
 
 filetype plugin indent on
 
@@ -61,9 +64,13 @@ set tags+=/usr/include/qt4/tags
 set tags+=./tags
 set autochdir
 
-"设置PowerLine
+"设置AirLine
 set laststatus=2
-let g:Powerline_symbols = 'unicode'
+let g:airline_theme = 'durant'
+let g:airline_powerline_fonts = 1
+let g:airline_section_y = 'BN: %{bufnr("%")}'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#whitespace#enabled = 0
 
 "进行Tlist的设置
 let Tlist_Ctags_Cmd="ctags"         "因为ctags直接在环境变量里可直接执行
@@ -87,7 +94,7 @@ let Tlist_Auto_Open=0               "每次使用vim，是否自动打开Tlist
 "let OmniCpp_MayCompleteArrow = 1    "输入->后补全
 "let OmniCpp_MayCompleteScope = 1    "输入::后补全
 
-"set completeopt=menuone,longest,menu
+set completeopt=menuone,longest,menu
 "set ai!
 
 "使用astyle 格式化C代码
@@ -99,6 +106,8 @@ map <F4> <Esc>:Tlist <CR>
 
 "头文件与源文件切换
 map <F12> <Esc>:A<CR>
+
+map <F8> <Esc>:! dot -Tpng % > output.png && eog output.png <CR>
 
 " 使用鼠标复制粘贴
 set mouse=v
@@ -114,6 +123,7 @@ set autowriteall
 
 " 新建python文件自动插入文件头
 autocmd BufNewFile *.py   0 r ~/.vim/templates/python.tpl
+autocmd BufNewFile *.pyw  0 r ~/.vim/templates/python.tpl
 autocmd BufNewFile *.vhdl 0 r ~/.vim/templates/vhdl.tpl
 autocmd BufNewFile *.vhd  0 r ~/.vim/templates/vhdl.tpl
 autocmd BufNewFile *.sh   0 r ~/.vim/templates/bash.tpl

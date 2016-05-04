@@ -1,2 +1,2 @@
-set guifont=Ubuntu\ Mono\ 15
-set guifontwide=Ubuntu\ Mono\ 15
+set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 15
+set guifontwide=Ubuntu\ Mono\ derivative\ Powerline\ 15
