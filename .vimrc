@@ -30,6 +30,12 @@ Bundle 'mattn/emmet-vim'
 Bundle 'iamcco/markdown-preview.vim'
 Bundle 'Rip-Rip/clang_complete'
 Bundle 'udalov/kotlin-vim'
+Bundle 'leafgarland/typescript-vim'
+Bundle 'Shougo/vimproc.vim'
+Bundle 'Quramy/tsuquyomi'
+Bundle 'edkolev/promptline.vim'
+Bundle 'fatih/vim-go'
+"Bundle 'suan/vim-instant-markdown'
 
 filetype plugin indent on
 
@@ -54,7 +60,7 @@ endif
 let g:indent_guides_guide_size=1
 
 let g:clang_use_library=1
-let g:clang_library_path="/usr/lib/llvm-3.6/lib"
+let g:clang_library_path="/usr/lib/llvm-3.8/lib"
 
 set sessionoptions+=unix,slash
 
@@ -107,7 +113,7 @@ map <F4> <Esc>:Tlist <CR>
 "头文件与源文件切换
 map <F12> <Esc>:A<CR>
 
-map <F8> <Esc>:! dot -Tpng % > output.png && eog output.png <CR>
+map <F8> <Esc>:! dot -Tpng % > "%:t:r".png && xdg-open "%:t:r".png <CR>
 
 " 使用鼠标复制粘贴
 set mouse=v
