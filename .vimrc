@@ -28,20 +28,18 @@ Bundle 'vimwiki'
 Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'mattn/emmet-vim'
 Bundle 'iamcco/markdown-preview.vim'
-Bundle 'Rip-Rip/clang_complete'
 Bundle 'udalov/kotlin-vim'
 Bundle 'leafgarland/typescript-vim'
-Bundle 'Shougo/vimproc.vim'
 Bundle 'Quramy/tsuquyomi'
-Bundle 'edkolev/promptline.vim'
 Bundle 'fatih/vim-go'
-"Bundle 'suan/vim-instant-markdown'
+Bundle 'vim-scripts/fcitx.vim'
 
 filetype plugin indent on
 
 syntax on           "打开语法高亮
 set nocompatible    " 不要vim模仿vi模式
 colo evening 	    " 使用evening主题
+"colo torte
 set autoindent      " 智能缩进
 set smartindent	    " 智能对齐方式
 set expandtab
@@ -58,9 +56,6 @@ if &diff
 endif
 
 let g:indent_guides_guide_size=1
-
-let g:clang_use_library=1
-let g:clang_library_path="/usr/lib/llvm-3.8/lib"
 
 set sessionoptions+=unix,slash
 
@@ -138,3 +133,5 @@ autocmd BufNewFile,BufRead *.qml  set filetype=qml
 autocmd BufNewFile,BufRead *.go  set filetype=go
 autocmd BufNewFile * normal G
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
+set t_RV=
