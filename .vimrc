@@ -33,6 +33,7 @@ Bundle 'leafgarland/typescript-vim'
 Bundle 'Quramy/tsuquyomi'
 Bundle 'fatih/vim-go'
 Bundle 'vim-scripts/fcitx.vim'
+Bundle 'luochen1990/rainbow'
 
 filetype plugin indent on
 
@@ -40,6 +41,7 @@ syntax on           "打开语法高亮
 set nocompatible    " 不要vim模仿vi模式
 colo evening 	    " 使用evening主题
 "colo torte
+
 set autoindent      " 智能缩进
 set smartindent	    " 智能对齐方式
 set expandtab
@@ -55,6 +57,7 @@ if &diff
     colors peaksea
 endif
 
+let g:rainbow_active = 1
 let g:indent_guides_guide_size=1
 
 set sessionoptions+=unix,slash
